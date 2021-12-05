@@ -164,7 +164,7 @@ export default class Dashboard extends Component {
                                     {/* MAP & BOX PANE */}
                                     <div className="card">
                                         <div className="card-header">
-                                            <h3 className="card-title">US-Visitors Report</h3>
+                                            <h3 className="card-title">States Speed Analysis</h3>
                                             <div className="card-tools">
                                                 <button type="button" className="btn btn-tool" data-card-widget="collapse">
                                                     <i className="fas fa-minus" />
@@ -187,19 +187,19 @@ export default class Dashboard extends Component {
                                                     <div className="description-block mb-4">
                                                         <div className="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
                                                         <h5 className="description-header">8390</h5>
-                                                        <span className="description-text">Visits</span>
+                                                        <span className="description-text">Tests</span>
                                                     </div>
                                                     {/* /.description-block */}
                                                     <div className="description-block mb-4">
                                                         <div className="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                                                        <h5 className="description-header">30%</h5>
-                                                        <span className="description-text">Referrals</span>
+                                                        <h5 className="description-header">95%</h5>
+                                                        <span className="description-text">Good Speed</span>
                                                     </div>
                                                     {/* /.description-block */}
                                                     <div className="description-block">
                                                         <div className="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                                                        <h5 className="description-header">70%</h5>
-                                                        <span className="description-text">Organic</span>
+                                                        <h5 className="description-header">5%</h5>
+                                                        <span className="description-text">Average Speed</span>
                                                     </div>
                                                     {/* /.description-block */}
                                                 </div>{/* /.card-pane-right */}
@@ -212,7 +212,7 @@ export default class Dashboard extends Component {
                                     {/* TABLE: LATEST ORDERS */}
                                     <div className="card">
                                         <div className="card-header border-transparent">
-                                            <h3 className="card-title">Latest Orders</h3>
+                                            <h3 className="card-title">ZTE Speedtests</h3>
                                             <div className="card-tools">
                                                 <button type="button" className="btn btn-tool" data-card-widget="collapse">
                                                     <i className="fas fa-minus" />
@@ -298,8 +298,8 @@ export default class Dashboard extends Component {
                                         </div>
                                         {/* /.card-body */}
                                         <div className="card-footer clearfix">
-                                            <a href="javascript:void(0)" className="btn btn-sm btn-info float-left">Place New Order</a>
-                                            <a href="javascript:void(0)" className="btn btn-sm btn-secondary float-right">View All Orders</a>
+                                            <a href="javascript:void(0)" className="btn btn-sm btn-info float-left">Import</a>
+                                            <a href="javascript:void(0)" className="btn btn-sm btn-secondary float-right">View All</a>
                                         </div>
                                         {/* /.card-footer */}
                                     </div>
@@ -311,17 +311,26 @@ export default class Dashboard extends Component {
                                     <div className="info-box mb-3 bg-warning">
                                         <span className="info-box-icon"><i className="fas fa-tag" /></span>
                                         <div className="info-box-content">
-                                            <span className="info-box-text">Inventory</span>
-                                            <span className="info-box-number">5,200</span>
+                                            <span className="info-box-text">Average Speed</span>
+                                            <span className="info-box-number">92,050</span>
                                         </div>
                                         {/* /.info-box-content */}
                                     </div>
                                     {/* /.info-box */}
                                     <div className="info-box mb-3 bg-success">
-                                        <span className="info-box-icon"><i className="far fa-heart" /></span>
+                                        <span className="info-box-icon"><i className="fas fa-tag" /></span>
                                         <div className="info-box-content">
-                                            <span className="info-box-text">Mentions</span>
-                                            <span className="info-box-number">92,050</span>
+                                            <span className="info-box-text">Good Speed</span>
+                                            <span className="info-box-number">1,050</span>
+                                        </div>
+                                        {/* /.info-box-content */}
+                                    </div>
+                                    {/* /.info-box */}
+                                    <div className="info-box mb-3 bg-info">
+                                        <span className="info-box-icon"><i className="fas fa-tag" /></span>
+                                        <div className="info-box-content">
+                                            <span className="info-box-text">Low Speed</span>
+                                            <span className="info-box-number">921</span>
                                         </div>
                                         {/* /.info-box-content */}
                                     </div>
@@ -329,17 +338,8 @@ export default class Dashboard extends Component {
                                     <div className="info-box mb-3 bg-danger">
                                         <span className="info-box-icon"><i className="fas fa-cloud-download-alt" /></span>
                                         <div className="info-box-content">
-                                            <span className="info-box-text">Downloads</span>
-                                            <span className="info-box-number">114,381</span>
-                                        </div>
-                                        {/* /.info-box-content */}
-                                    </div>
-                                    {/* /.info-box */}
-                                    <div className="info-box mb-3 bg-info">
-                                        <span className="info-box-icon"><i className="far fa-comment" /></span>
-                                        <div className="info-box-content">
-                                            <span className="info-box-text">Direct Messages</span>
-                                            <span className="info-box-number">163,921</span>
+                                            <span className="info-box-text">Downloadable Reports</span>
+                                            <span className="info-box-number">56</span>
                                         </div>
                                         {/* /.info-box-content */}
                                     </div>
@@ -381,35 +381,6 @@ export default class Dashboard extends Component {
                                             {/* /.row */}
                                         </div>
                                         {/* /.card-body */}
-                                        <div className="card-footer p-0">
-                                            <ul className="nav nav-pills flex-column">
-                                                <li className="nav-item">
-                                                    <a href="#" className="nav-link">
-                                                        United States of America
-                                                        <span className="float-right text-danger">
-                                                            <i className="fas fa-arrow-down text-sm" />
-                                                            12%</span>
-                                                    </a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a href="#" className="nav-link">
-                                                        India
-                                                        <span className="float-right text-success">
-                                                            <i className="fas fa-arrow-up text-sm" /> 4%
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a href="#" className="nav-link">
-                                                        China
-                                                        <span className="float-right text-warning">
-                                                            <i className="fas fa-arrow-left text-sm" /> 0%
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        {/* /.footer */}
                                     </div>
                                     {/* /.card */}
                                 </div>
